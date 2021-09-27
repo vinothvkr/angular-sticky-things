@@ -1,4 +1,4 @@
-import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import {ScrollContainerComponent} from './scroll-container.component';
 import {BrowserTestingModule} from '@angular/platform-browser/testing';
@@ -8,7 +8,7 @@ describe('ScrollContainerComponent', () => {
   let component: ScrollContainerComponent;
   let fixture: ComponentFixture<ScrollContainerComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [
         BrowserTestingModule,
